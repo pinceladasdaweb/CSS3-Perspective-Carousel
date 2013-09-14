@@ -1,0 +1,127 @@
+/*
++----------------------------------------------------------------+
+    Reset CSS
++----------------------------------------------------------------+
+*/
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*
++----------------------------------------------------------------+
+    Fonts
++----------------------------------------------------------------+
+*/
+@font-face {
+    font-family: 'OratorpraOi-TextTwo';
+        src:  url('fonts/oratorpraoitext2.eot');
+        src:  url('fonts/oratorpraoitext2.eot?#iefix') format('embedded-opentype'),
+              url('fonts/oratorpraoitext2.woff') format('woff'),
+              url('fonts/oratorpraoitext2.ttf') format('truetype'),
+              url('fonts/oratorpraoitext2.svg#oratorpraoitext2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
++----------------------------------------------------------------+
+    Definicoes Gerais
++----------------------------------------------------------------+
+*/
+body {background: #33302f url('img/noisy.png'); font: 62.5% Verdana, Geneva, sans-serif}
+h1 {
+    color: #fff;
+    font: 3.8em 'OratorpraOi-TextTwo';
+    margin: 50px 0;
+    text-align: center
+}
+
+/*
++----------------------------------------------------------------+
+    Carousel
++----------------------------------------------------------------+
+*/
+.carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+}
+
+.carousel-wrapper {height: 380px}
+
+.carousel-box {
+    border: 7px solid #FFF;
+    background-color: #CFCFCF;
+    height: 124px;
+    left: 50%;
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin: -62px 0 0 -100px;
+    width: 200px;
+    z-index: -1;
+
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+       -moz-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+        -ms-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+         -o-box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+            box-shadow: 0px 0px 10px 4px rgba(44, 42, 41, 0.05);
+
+    -webkit-transition: 0.5s ease-out;
+       -moz-transition: 0.5s ease-out;
+        -ms-transition: 0.5s ease-out;
+         -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
+}
+
+.carousel-box.is-active {
+    z-index: 4;
+    width: 380px;
+    height: 280px;
+    left: 50%;
+    margin: 35px 0 0 -190px;
+    top: 0;
+}
+
+.carousel-box.left,
+.carousel-box.right {
+    width: 285px;
+    height: 210px;
+}
+
+.carousel-box.left {
+    left: 50px;
+    margin: 0;
+    top: 90px;
+    z-index: 2;
+    transform: perspective(600px) rotateY(45deg);
+    -webkit-transform: perspective(600) rotateY(45deg);
+}
+
+.carousel-box.right {
+    left: 610px;
+    margin: 0;
+    top: 90px;
+    z-index: 2;
+    transform: perspective(600px) rotateY(-45deg);
+    -webkit-transform: perspective(600) rotateY(-45deg);
+}
+
+.nav-left,
+.nav-right {
+    background: url('img/arrow.png') no-repeat left 5px;
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    top: 160px;
+    width: 44px;
+}
+
+.nav-left {left: 0}
+
+.nav-right {
+    right: 0;
+    background-position: right -121px;
+}
