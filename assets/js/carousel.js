@@ -2,12 +2,12 @@
 --------------------------------
 CSS3 Perspective Carousel
 --------------------------------
-+ https://github.com/pinceladasdaweb/
++ https://github.com/pinceladasdaweb/CSS3-Perspective-Carousel
 + version 1.0
 + Copyright 2013 Pedro Rogerio
 + Licensed under the MIT license
 
-+ Documentation: https://github.com/pinceladasdaweb/
++ Documentation: https://github.com/pinceladasdaweb/CSS3-Perspective-Carousel
 */
 var Carousel = (function ($) {
     'use strict';
