@@ -40,7 +40,8 @@ var Carousel = (function ($) {
         events: function () {
             var self = this;
 
-            self.target.on('click', '.nav-left', function () {
+            self.target.on('click', '.nav-left, .left', function (e) {
+                e.preventDefault();
                 self.moveCarousel($('.carousel-wrapper li'), 'right', 'left', function (cur, $el) {
                     if ((cur - 1) <= 1) {
                         return $el.length - 1;
@@ -48,7 +49,8 @@ var Carousel = (function ($) {
                 });
             });
 
-            self.target.on('click', '.nav-right', function () {
+            self.target.on('click', '.nav-right, .right', function (e) {
+                e.preventDefault();
                 self.moveCarousel($('.carousel-wrapper li'), 'left', 'right', function (cur, $el) {
                     if ((cur + 1) >= ($el.length - 1)) {
                         return '0';
