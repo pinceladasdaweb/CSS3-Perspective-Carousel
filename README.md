@@ -1,7 +1,7 @@
 CSS3 Perspective Carousel
 =========================
 
-![](https://raw.github.com/pinceladasdaweb/CSS3-Perspective-Carousel/master/assets/img/carousel.jpg)
+![](https://raw.github.com/pinceladasdaweb/CSS3-Perspective-Carousel/master/example/assets/img/carousel.jpg)
 
 An awesome carousel developed on top of jQuery with bit of witchcraft of CSS3.
 
