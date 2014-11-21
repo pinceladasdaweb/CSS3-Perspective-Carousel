@@ -1,0 +1,38 @@
+/*
++----------------------------------------------------------------+
+    Reset CSS
++----------------------------------------------------------------+
+*/
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/*
++----------------------------------------------------------------+
+    Fonts
++----------------------------------------------------------------+
+*/
+@font-face {
+    font-family: 'OratorpraOi-TextTwo';
+        src:  url('fonts/oratorpraoitext2.eot');
+        src:  url('fonts/oratorpraoitext2.eot?#iefix') format('embedded-opentype'),
+              url('fonts/oratorpraoitext2.woff') format('woff'),
+              url('fonts/oratorpraoitext2.ttf') format('truetype'),
+              url('fonts/oratorpraoitext2.svg#oratorpraoitext2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
++----------------------------------------------------------------+
+    Definicoes Gerais
++----------------------------------------------------------------+
+*/
+body {background: #33302f url('img/noisy.png'); font: 62.5% Verdana, Geneva, sans-serif}
+h1 {
+    color: #fff;
+    font: 3.8em 'OratorpraOi-TextTwo';
+    margin: 50px 0;
+    text-align: center
+}
