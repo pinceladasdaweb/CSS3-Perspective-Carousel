@@ -4,20 +4,21 @@
         <meta charset="utf-8">
         <title>CSS3 Perspective Carousel</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../build/carousel.min.css">
     </head>
     <body>
         <h1>CSS3 Perspective Carousel</h1>
         <div class="carousel">
             <ul class="carousel-wrapper">
-                <li class="carousel-box left">
+                <li class="carousel-box">
                     <img src="assets/img/img1.jpg" alt="CSS3 Perspective Carousel">
                 </li>
 
-                <li class="carousel-box is-active">
+                <li class="carousel-box">
                     <img src="assets/img/img2.jpg" alt="CSS3 Perspective Carousel">
                 </li>
 
-                <li class="carousel-box right">
+                <li class="carousel-box">
                     <img src="assets/img/img3.jpg" alt="CSS3 Perspective Carousel">
                 </li>
 
@@ -58,23 +59,20 @@
                 </li>
             </ul>
         </div>
-        <?php
-            $ieVersion = preg_match('/MSIE (.*?);/', $_SERVER['HTTP_USER_AGENT'], $matches) ? floatval($matches[1]) : null;
 
-            if($ieVersion < 9 && $ieVersion != null) {
-                $jQueryVersion = '1.10.2';
-            } else {
-                $jQueryVersion = '2.0.3';
-            }
-        ?>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/<?php echo $jQueryVersion; ?>/jquery.min.js"></script>
-        <script src="assets/js/carousel.js"></script>
+        <!--[if lt IE 9]>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 9]><!-->
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!--<![endif]-->
+        <script src="../build/carousel.min.js"></script>
         <script>
             (function() {
                 Carousel.init({
                     target: $('.carousel')
                 });
-            })();
+            }());
         </script>
     </body>
 </html>
