@@ -72,7 +72,7 @@
 
 .nav-left,
 .nav-right {
-    background: url('img/arrow.png') no-repeat left 5px;
+    background: url('../example/assets/css/img/arrow.png') no-repeat left 5px;
     cursor: pointer;
     height: 60px;
     position: absolute;
