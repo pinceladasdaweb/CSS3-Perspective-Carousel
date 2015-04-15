@@ -38,7 +38,7 @@ Put the JavaScript before end of body tag:
 </script>
 ```
 
-In an AMD loader:
+Or if you prefer, by way of AMD:
 ```js
 require(['/path/to/carousel.min'], function(Carousel) {
     Carousel.init({
